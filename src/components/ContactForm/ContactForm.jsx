@@ -2,7 +2,7 @@ import form from './ContactForm.module.css';
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectContacts } from 'redux/selector';
-import { addContacts } from 'redux/contactsOperations';
+import { addContactsThunk } from 'redux/contactsSlice';
 
 export const ContactForm = () => {
   const dispatch = useDispatch();
@@ -33,7 +33,7 @@ export const ContactForm = () => {
       alert(`${newContact.name} is already exist`);
       return;
     }
-    dispatch(addContacts(newContact));
+    dispatch(addContactsThunk(newContact));
     fromReset();
   };
 

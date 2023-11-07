@@ -1,7 +1,7 @@
 import { Loader } from 'components/Loader/Loader';
 import list from './ContactList.module.css';
 import { useDispatch, useSelector } from 'react-redux';
-import { deleteContact, fetchContacts } from 'redux/contactsOperations';
+import { deleteContactThunk, fetchContactsThunk } from 'redux/contactsSlice';
 import {
   selectLoading,
   selectError,
@@ -18,7 +18,7 @@ export const ContactList = () => {
   const filter = useSelector(selectFilter);
 
   useEffect(() => {
-    dispatch(fetchContacts());
+    dispatch(fetchContactsThunk());
   }, [dispatch]);
 
   const getFilteredContacts = contacts.filter(contact =>
@@ -26,7 +26,7 @@ export const ContactList = () => {
   );
 
   const onDeleteContacts = id => {
-    dispatch(deleteContact(id));
+    dispatch(deleteContactThunk(id));
   };
 
   return (
