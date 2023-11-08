@@ -1,0 +1,24 @@
+.userWrap {
+  display: flex;
+  gap: 20px;
+}
+.userTitle {
+  color: #424242;
+  display: flex;
+  align-items: center;
+}
+
+.userBtn {
+  font-size: 18px;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #5596e6;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  font-weight: 300;
+}
+.userBtn:hover,
+.userBtn:focus {
+  background-color: #3d70b2;
+}

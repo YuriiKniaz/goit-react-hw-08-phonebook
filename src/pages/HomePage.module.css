@@ -1,0 +1,37 @@
+.homeWrap {
+  width: 1280px;
+  display: flex;
+  margin: 0 auto;
+  padding: 0 32px;
+  margin-top: 32px;
+}
+.title {
+  color: #424242;
+  margin-bottom: 32px;
+  font-size: 32px;
+}
+
+.homeList {
+  display: flex;
+  gap: 32px;
+  margin-left: 32px;
+}
+
+.homeListItemWrap {
+  font-size: 18px;
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: underline #424242;
+  cursor: pointer;
+}
+
+.homeListLink {
+  color: #424242;
+  font-size: 24px;
+}
+
+.homeListLink:hover,
+.homeListLink:focus {
+  text-decoration: underline #5596e6;
+  color: #5596e6;
+}

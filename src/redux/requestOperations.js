@@ -13,12 +13,12 @@ export const setToken = (token) => {
 
 export const signUpRequest = async (authData) => {
     const response = (await requestInstance.post('/users/signup', authData)).data;
-    setToken(authData.token)
+    setToken(response.token)
     return response;
 }
 export const logInRequest = async (authData) => {
     const response = (await requestInstance.post('/users/login', authData)).data;
-    setToken(authData.token)
+    setToken(response.token)
     return response;
 }
 export const logOutRequest = async () => {

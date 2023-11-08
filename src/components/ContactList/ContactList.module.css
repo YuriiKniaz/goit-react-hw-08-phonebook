@@ -20,7 +20,12 @@
   border: none;
   border-radius: 5px;
   padding: 8px;
-  background-color: #c46f6f;
+  background-color: #db5a5a;
   color: #fff;
   cursor: pointer;
+}
+
+.listBtn:hover,
+.listBtn:focus {
+  background-color: #883939;
 }

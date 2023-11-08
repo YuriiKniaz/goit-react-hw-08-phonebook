@@ -1,0 +1,44 @@
+.header {
+  padding: 12px 32px;
+  background-color: #f0f3f6;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+.navList {
+  display: flex;
+  gap: 32px;
+}
+.homePageWrap,
+.navListItem,
+.contacts {
+  font-size: 18px;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #5596e6;
+  cursor: pointer;
+}
+.homePage {
+  color: #ffffff;
+}
+
+.contactsWrap {
+  display: flex;
+  gap: 32px;
+}
+
+.navListItem:hover,
+.navListItem:focus,
+.homePageWrap:hover,
+.homePageWrap:focus,
+.contacts:hover,
+.contacts:focus {
+  background-color: #3d70b2;
+}
+
+.signUp,
+.logIn,
+.contacts {
+  color: #ffffff;
+}

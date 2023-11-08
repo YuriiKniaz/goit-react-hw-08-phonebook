@@ -40,7 +40,7 @@ export const ContactForm = () => {
   return (
     <form className={form.form} onSubmit={onSubmit}>
       <label className={form.lable}>
-        Name
+        Name:
         <input
           className={form.formInput}
           type="text"
@@ -52,7 +52,7 @@ export const ContactForm = () => {
         />
       </label>
       <label className={form.lable}>
-        Number
+        Number:
         <input
           className={form.formInput}
           type="tel"
@@ -64,7 +64,7 @@ export const ContactForm = () => {
         />
       </label>
       <button className={form.formBtn} type="submit">
-        Add contact
+        Add
       </button>
     </form>
   );
