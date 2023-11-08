@@ -27,6 +27,7 @@ export const logOutRequest = async () => {
 }
 export const requestRefreshUser = async () => {
     const response = (await requestInstance.get('/users/current')).data;
+    console.log(response);
     return response;
 }
 export const usersData = async () => {

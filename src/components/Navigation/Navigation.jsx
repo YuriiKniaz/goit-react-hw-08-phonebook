@@ -6,7 +6,6 @@ import User from 'components/User/User';
 import nav from './Navigation.module.css';
 const Navigation = () => {
   const signedIn = useSelector(selectAuthSignedIn);
-  console.log(signedIn);
 
   return (
     <header className={nav.header}>

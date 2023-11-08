@@ -32,7 +32,7 @@ export const refreshThunk = createAsyncThunk(
     'auth/refresh',
     async (_, thunkAPI) => {
         const state = thunkAPI.getState();
-        const token = state.auth.token;
+        const token = state.authorization.token;
 
         try {
             setToken(token);
@@ -47,7 +47,7 @@ export const refreshThunk = createAsyncThunk(
     {
         condition: (_, thunkAPI) => {
             const state = thunkAPI.getState();
-            const token = state.auth.token;
+            const token = state.authorization.token;
             if (!token) return false;
             return true;
         }
